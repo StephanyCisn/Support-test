@@ -38,6 +38,15 @@ describe('Broken Sauce', function () {
             let button = await driver.findElement(By.partialLinkText("sauce"));
             button.click();
 
+            // Locating the Main Menu (Parent element)
+await driver.findElement(By.linkText("Resources")).click();
+
+
+// Locating the element from Sub Menu
+await driver.findElement(By.linkText("Documentation")).click();
+
+
+
 
 
 await driver.quit();
